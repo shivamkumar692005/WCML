@@ -1,12 +1,11 @@
 import './App.css'
-import Home from './pages/home'
+import Auth from './pages/Auth'
 
 function App() {
 
   return (
     <>
-     <h1>hello world-1</h1>
-     <Home />
+     <Auth />
     </>
   )
 }
