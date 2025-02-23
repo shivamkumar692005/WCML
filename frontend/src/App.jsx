@@ -1,13 +1,16 @@
-import './App.css'
-import Auth from './pages/Auth'
+import React, { Suspense, lazy } from 'react';
+import './App.css';
+import SkeletonAuth from './components/Auth/SkeletonAuth';
+
+
+const Auth = lazy(() => import('./pages/Auth'));
 
 function App() {
-
   return (
-    <>
-     <Auth />
-    </>
-  )
+    <Suspense fallback={<SkeletonAuth />}>
+      <Auth />
+    </Suspense>
+  );
 }
 
-export default App
+export default App;
