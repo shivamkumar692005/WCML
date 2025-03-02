@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -6,13 +7,13 @@ export default function Sidebar() {
       <h1 className="text-2xl font-bold mb-6">Sidebar</h1>
       <ul>
         <li className="mb-2">
-          <a href="/" className="hover:text-gray-400">Home</a>
+          <Link to="/" className="hover:text-gray-400">Home</Link>
         </li>
         <li className="mb-2">
-          <a href="/auth" className="hover:text-gray-400">Auth</a>
+            <Link to="/auth" className="hover:text-gray-400">Auth</Link>
         </li>
         <li className="mb-2">
-          <a href="#" className="hover:text-gray-400">Settings</a>
+        <Link to="/" className="hover:text-gray-400">Settings</Link>
         </li>
       </ul>
     </div>
